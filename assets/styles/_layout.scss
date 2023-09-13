@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  grid-template:
+    ". header ." min-content
+    ". main   . " minmax(90vh, 1fr)
+    ". footer . " min-content /
+    1fr minmax(auto, 1180px) 1fr;
+  padding: var(--spacing);
+  background-color: var(--brand);
+  color: var(--paper);
+}
+header {
+  grid-area: header;
+  margin-bottom: -44px;
+  z-index: 1;
+  svg {
+    max-width: 220px;
+  }
+  p {
+    padding: 0 0 calc(2 * var(--spacing));
+    font-style: italic;
+  }
+}
+
+main {
+  grid-area: main;
+  background-color: var(--paper);
+  color: var(--ink);
+  padding: calc(var(--spacing) * 2);
+  border-radius: 3px;
+}
+footer {
+  grid-area: footer;
+}

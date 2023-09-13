@@ -1,0 +1,37 @@
+$headings: 1, 2, 3, 4, 5, 6;
+@each $heading in $headings {
+  h#{$heading} {
+    font-size: 3rem - ($heading * 0.375);
+    margin-top: 0;
+  }
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: calc(2 * var(--spacing)) auto 0;
+}
+p {
+  line-height: 1.5;
+}
+
+body {
+  font: 100%/1.5 var(--font);
+}
+
+a,
+a:any-link {
+  color: currentColor;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, var(--brand), var(--brand));
+  background-size: 100% 0.1em;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover,
+  &:focus {
+    background-size: 100% 100%;
+    color: var(--paper);
+  }
+}
