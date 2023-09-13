@@ -1,0 +1,19 @@
+{
+  "name": "CYF Labs",
+  "version": "1.0.0",
+  "description": "Static semantic HTML page with Sass and SVG assets",
+  "scripts": {
+    "build": "sass assets/styles/main.scss assets/styles/main.css",
+    "watch": "sass --watch assets/styles/main.scss assets/styles/main.css"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeYourFuture/cyf-labs.git"
+  },
+  "author": "SallyMcGrath",
+  "license": "MIT"
+}
