@@ -1,0 +1,159 @@
+/* ----------App.js---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: #f0f0f0;
+  padding: 20px 50px;
+}
+
+.App .about-trainees {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.App .about-trainees h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.App .about-trainees figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.App .cyf {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.App .about-program {
+  margin-bottom: 20px;
+}
+
+.App .about-program p {
+  margin-bottom: 10px;
+}
+
+.App .about-program h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* ----------Header.jsx---------- */
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  flex-grow: 0.75;
+  text-align: center;
+}
+
+/* ----------Skills.jsx---------- */
+
+.skills ul {
+  margin-left: 20px;
+}
+
+/* ----------Trainee.jsx---------- */
+.trainee {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainee .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.trainee .percent svg circle {
+  fill: none;
+  stroke-width: 10;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.trainee .percent svg circle:nth-child(1) {
+  stroke: lightgray;
+  stroke-dashoffset: 0;
+}
+
+.trainee .percent svg circle:nth-child(2) {
+  stroke: #ff0000;
+}
+
+.trainee .percent svg .Female {
+  stroke-dashoffset: calc(440 - (440 * 40) / 100);
+}
+
+.trainee .percent svg .Minority {
+  stroke-dashoffset: calc(440 - (440 * 78) / 100);
+}
+
+.trainee .percent svg .Refugee {
+  stroke-dashoffset: calc(440 - (440 * 53) / 100);
+}
+
+.trainee .percent svg .Live {
+  stroke-dashoffset: calc(440 - (440 * 83) / 100);
+}
+
+.trainee .percent .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trainee .percent h2 {
+  font-size: 38px;
+}
+
+.trainee .percent span {
+  font-size: 20px;
+}
+
+.trainee .text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* ----------Footer.jsx---------- */
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
