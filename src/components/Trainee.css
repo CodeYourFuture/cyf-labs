@@ -1,0 +1,70 @@
+.box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent svg circle {
+  fill: none;
+  stroke-width: 10;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1) {
+  stroke: lightgray;
+  stroke-dashoffset: 0;
+}
+
+.box .percent svg circle:nth-child(2) {
+  stroke: #ff0000;
+}
+
+.box .percent svg .Female {
+  stroke-dashoffset: calc(440 - (440 * 40) / 100);
+}
+
+.box .percent svg .Minority {
+  stroke-dashoffset: calc(440 - (440 * 78) / 100);
+}
+
+.box .percent svg .Refugee {
+  stroke-dashoffset: calc(440 - (440 * 53) / 100);
+}
+
+.box .percent svg .Live {
+  stroke-dashoffset: calc(440 - (440 * 83) / 100);
+}
+
+.box .percent .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box .percent .number h2 {
+  font-size: 38px;
+}
+
+.box .percent .number span {
+  font-size: 20px;
+}
+
+.box .text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  text-align: center;
+}
