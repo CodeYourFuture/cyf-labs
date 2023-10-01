@@ -53,11 +53,11 @@
   transform: translate(-50%, -50%);
 }
 
-.box .percent .number h2 {
+.box .percent h2 {
   font-size: 38px;
 }
 
-.box .percent .number span {
+.box .percent span {
   font-size: 20px;
 }
 
