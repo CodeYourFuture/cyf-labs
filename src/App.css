@@ -1,55 +1,54 @@
-/* ----------App.js---------- */
-
 * {
   margin: 0;
   padding: 0;
+  line-height: 30px;
 }
+
+a,
+.skills strong {
+  color: #dd0303;
+}
+
+p,
+li {
+  font-size: 18px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* ----------App.js---------- */
 
 .App {
   background-color: #f0f0f0;
   padding: 20px 50px;
 }
 
-.App .about-trainees {
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 10px;
-}
-
-.App .about-trainees h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.App .about-trainees figure {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-}
-
 .App .cyf {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  padding: 20px 50px;
+  margin: 20px;
+}
+
+.App .about-trainees {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   padding: 20px;
-  margin-top: 20px;
-}
-
-.App .about-program {
-  margin-bottom: 20px;
-}
-
-.App .about-program p {
-  margin-bottom: 10px;
-}
-
-.App .about-program h3 {
-  font-size: 1.2rem;
   margin-top: 10px;
+}
+
+.App .cyf figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
 }
 
 /* ----------Header.jsx---------- */
@@ -66,6 +65,13 @@
 
 /* ----------Skills.jsx---------- */
 
+.skills {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .skills ul {
   margin-left: 20px;
 }
@@ -73,6 +79,7 @@
 /* ----------Trainee.jsx---------- */
 .trainee {
   width: 20%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,14 +127,12 @@
 }
 
 .trainee .percent .number {
+  font-size: 30px;
+  font-weight: bold;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.trainee .percent h2 {
-  font-size: 38px;
 }
 
 .trainee .percent span {
@@ -137,7 +142,6 @@
 .trainee .text {
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 1px;
   padding-top: 10px;
   text-align: center;
 }
@@ -147,13 +151,4 @@
 .footer {
   text-align: center;
   margin-top: 20px;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }

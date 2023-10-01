@@ -8,10 +8,10 @@ const Trainee = ({ text, percent }) => {
           <circle cx={70} cy={70} r={70}></circle>
           <circle cx={70} cy={70} r={70} className={text}></circle>
         </svg>
-        <h2 className="number">
+        <p className="number">
           {percent}
           <span>%</span>
-        </h2>
+        </p>
       </figure>
       <p className="text">{text}</p>
     </article>
