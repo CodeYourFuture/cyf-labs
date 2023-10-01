@@ -1,8 +1,8 @@
-import "./Trainee.css";
+import "../App.css";
 
 const Trainee = ({ text, percent }) => {
   return (
-    <article className="box">
+    <article className="trainee">
       <figure className="percent">
         <svg>
           <circle cx={70} cy={70} r={70}></circle>
