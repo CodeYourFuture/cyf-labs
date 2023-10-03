@@ -7,7 +7,7 @@ const Program = () => {
       <p>
         To complete our{" "}
         <a href="https://curriculum.codeyourfuture.io/">
-          <strong>Software Development Programme</strong>
+          Software Development Programme
         </a>
         , a CodeYourFuture graduate spends approximately
         <strong> 800 hours</strong> developing their technical and employability
