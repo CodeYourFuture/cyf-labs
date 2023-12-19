@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #dd0303;
+}
+
+.skills strong {
+  color: #dd0303;
+}
+
+p,
+li {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* ----------App.js---------- */
+
+.App {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.App .cyf {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.App .cyf .about-trainees {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #2f363e;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.App .cyf .about-trainees figure {
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* ----------Header.jsx---------- */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  flex-grow: 0.75;
+  text-align: center;
+}
+
+/* ----------Skills.jsx---------- */
+
+.skills {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills ul {
+  margin-left: 20px;
+}
+
+/* ----------Trainee.jsx---------- */
+
+.trainee {
+  width: 20%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.trainee .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.trainee .percent svg {
+  transform: rotate(270deg);
+}
+
+.trainee .percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 10px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.trainee .percent svg circle:nth-child(1) {
+  stroke: lightgray;
+  stroke-dashoffset: 0;
+}
+
+.trainee .percent svg circle:nth-child(2) {
+  stroke: #ff0000;
+}
+
+.trainee .percent svg .Female {
+  stroke-dashoffset: calc(440 - (440 * 40) / 100);
+}
+
+.trainee .percent svg .Minority {
+  stroke-dashoffset: calc(440 - (440 * 78) / 100);
+}
+
+.trainee .percent svg .Refugee {
+  stroke-dashoffset: calc(440 - (440 * 53) / 100);
+}
+
+.trainee .percent svg .Live {
+  stroke-dashoffset: calc(440 - (440 * 83) / 100);
+}
+
+.trainee .percent .number {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+}
+
+.trainee .percent span {
+  font-size: 20px;
+}
+
+.trainee .text {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 10px;
+  text-align: center;
+  width: 300px;
+  padding-top: 100px;
+}
+
+/* ----------Footer.jsx---------- */
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
+/* ----------Media Query---------- */
+
+@media screen and (min-width: 768px) and (max-width: 1223px) {
+  .App .cyf .about-trainees figure {
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .trainee {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trainee .percent .number {
+    top: 50%;
+    left: 50%;
+  }
+
+  .trainee .text {
+    width: 200px;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 1224px) {
+  .App {
+    padding: 20px 50px;
+    background-color: #f0f0f0;
+  }
+
+  .App .cyf {
+    padding: 20px 50px;
+    margin: 20px;
+  }
+
+  .App .cyf .about-trainees figure {
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .trainee {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trainee .percent .number {
+    top: 50%;
+    left: 50%;
+  }
+
+  .trainee .text {
+    padding-top: 20px;
+  }
+}
