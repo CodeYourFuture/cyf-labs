@@ -39,8 +39,8 @@ h2 {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 20px 10px;
   margin-top: 20px;
+  padding: 20px;
 }
 
 .App .cyf .about-trainees {
@@ -48,16 +48,13 @@ h2 {
   background-color: #2f363e;
   color: #fff;
   border-radius: 8px;
-  padding: 20px;
-  margin-top: 10px;
+  padding-bottom: 50px;
 }
 
 .App .cyf .about-trainees figure {
-  display: flex;
-  gap: 0px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 /* ----------Header.jsx---------- */
@@ -89,10 +86,9 @@ h2 {
 /* ----------Trainee.jsx---------- */
 
 .trainee {
-  width: 20%;
-  height: 20%;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .trainee .percent {
@@ -157,7 +153,6 @@ h2 {
 .trainee .text {
   font-size: 20px;
   font-weight: 700;
-  padding-top: 10px;
   text-align: center;
   width: 300px;
   padding-top: 100px;
@@ -176,61 +171,54 @@ h2 {
 
 /* ----------Media Query---------- */
 
-@media screen and (min-width: 768px) and (max-width: 1223px) {
-  .App .cyf .about-trainees figure {
+@media screen and (min-width: 665px) and (max-width: 1120px) {
+  .App {
+    padding: 0 20px;
+  }
+  .header {
     flex-direction: row;
-    gap: 20px;
-    margin-top: 10px;
   }
 
-  .trainee {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .trainee .percent .number {
-    top: 50%;
-    left: 50%;
-  }
-
-  .trainee .text {
-    width: 200px;
-    padding-top: 10px;
+  .App .cyf .about-trainees figure {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
   }
 }
 
-@media (min-width: 1224px) {
+@media screen and (min-width: 1120px) {
   .App {
-    padding: 20px 50px;
-    background-color: #f0f0f0;
-  }
-
-  .App .cyf {
-    padding: 20px 50px;
-    margin: 20px;
-  }
-
-  .App .cyf .about-trainees figure {
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 10px;
+    padding: 0 3rem;
   }
 
   .header {
     flex-direction: row;
   }
 
-  .trainee {
-    justify-content: center;
-    align-items: center;
+  .App .cyf {
+    padding: 2rem;
   }
 
-  .trainee .percent .number {
-    top: 50%;
-    left: 50%;
+  .App .cyf .about-trainees figure {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 1330px) {
+  .App {
+    padding: 0 3rem;
   }
 
-  .trainee .text {
-    padding-top: 20px;
+  .header {
+    flex-direction: row;
+  }
+
+  .App .cyf {
+    padding: 2rem;
+  }
+
+  .App .cyf .about-trainees figure {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
   }
 }
