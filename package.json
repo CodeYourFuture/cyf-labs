@@ -1,6 +1,7 @@
 {
   "name": "cyf-labs",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@vitejs/plugin-react-swc": "^4.2.2",
