@@ -12,5 +12,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build"
+  },
+  "engines": {
+    "node": "^24.11"
   }
 }
